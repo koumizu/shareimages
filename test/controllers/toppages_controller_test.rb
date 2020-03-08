@@ -4,7 +4,7 @@ class ToppagesControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
     get root_path
     assert_response :success
-    assert_select "title", "Home | ShareImages"
+    assert_select "title", "ShareImages"
   end
 
 end
