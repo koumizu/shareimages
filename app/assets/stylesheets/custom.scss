@@ -40,6 +40,19 @@
   }
 }
 
+.checkbox {
+  margin: 30px 0;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
+}
+
 @media all and (min-width: 740px) {
   .signup, .login {
     width: 360px;

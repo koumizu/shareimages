@@ -8,6 +8,11 @@
     <%= f.email_field :email, class: 'form-control', placeholder: "メールアドレス" %>
   
     <%= f.password_field :password, class: 'form-control', placeholder: "パスワード" %>
+    
+    <%= f.label :remember_me, class: "checkbox" do %>
+      <%= f.check_box :remember_me %>
+      <span>パスワードを保存する</span>
+    <% end %>
   
     <%= f.submit "ログイン", class: "btn btn-primary" %>
   <% end %>
