@@ -2,8 +2,9 @@ require 'test_helper'
 
 class ToppagesControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
-    get toppages_home_url
+    get root_path
     assert_response :success
+    assert_select "title", "Home | ShareImages"
   end
 
 end
