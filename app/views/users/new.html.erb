@@ -1,2 +1,22 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<% provide(:title, 'Sign up') %>
+
+<div class="signup">
+  <h2>Share Images</h2>
+  <p>登録して画像をshareしよう</p>
+  <div class="form">
+    <%= form_with(model: @user, url: signup_path, local: true) do |f| %>
+      
+      <%= render 'shared/error_messages' %>
+      
+      <%= f.text_field :name, class: 'form-control', placeholder: "名前" %>
+
+      <%= f.email_field :email, class: 'form-control', placeholder: "メールアドレス" %>
+
+      <%= f.password_field :password, class: 'form-control', placeholder: "パスワード" %>
+
+      <%= f.password_field :password_confirmation, class: 'form-control', placeholder: "パスワード確認" %>
+      <%= f.submit "新規登録", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
+
