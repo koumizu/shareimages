@@ -53,6 +53,20 @@
   margin-left: 0;
 }
 
+.users {
+  width: 400px;
+  margin: 0 auto;
+  li {
+    margin-bottom: 10px;
+    img {
+      border-radius: 50%;
+    }
+    a {
+      margin-left: 30px;
+    }
+  }
+}
+
 @media all and (min-width: 740px) {
   .signup, .login {
     width: 360px;
