@@ -17,7 +17,7 @@
 }
 
 // signup
-.signup, .login {
+.signup, .login, .password-reset {
   border: 1px solid gray;
   border-radius: 20px;
   width: 100%;
@@ -38,6 +38,11 @@
     width: 100%;
     margin-bottom: 20px;
   }
+}
+
+.password-reset h2 + p {
+  font-size: 14px;
+  text-align: left;
 }
 
 .checkbox {
@@ -67,7 +72,7 @@
 }
 
 @media all and (min-width: 740px) {
-  .signup, .login {
+  .signup, .login, .password-reset {
     width: 360px;
     padding: 20px 40px;
   }

@@ -1,4 +1,5 @@
 <% provide(:title, 'All users') %>
+<%= link_to "Log out", logout_path, method: :delete %>
 <div class="users">
   <%= will_paginate %>
   
